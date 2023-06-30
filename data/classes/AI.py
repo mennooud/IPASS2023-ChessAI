@@ -113,7 +113,9 @@ class AI:
     def evaluate_board(self):
         '''
         evaluate_board 
-
+        This function is called when to evaluate the board. 
+        All the pieces have a specific score and the move determines the score based on the current state of the board.
+        
         Returns:
             _type_: The value of the board after minimax calculations. The value is determined by the maximizing_player parameter. 
         '''        
