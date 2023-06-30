@@ -169,14 +169,14 @@ class Game:
         Returns:
             _type_: Returns True if the given color is a checkmate. False otherwise.
         '''        
-            for row in range(ROWS):
-                for col in range(COLS):
-                    piece = self.squares[row][col].piece
-                    if piece and piece.color == color:
-                        self.calc_moves(piece, row, col, bool=True)
-                        if piece.moves:
-                            return False
-            return True
+        for row in range(ROWS):
+            for col in range(COLS):
+                piece = self.squares[row][col].piece
+                if piece and piece.color == color:
+                    self.calc_moves(piece, row, col, bool=True)
+                    if piece.moves:
+                        return False
+        return True
 
     def calc_moves(self, piece, row, col, bool=True):
         '''
