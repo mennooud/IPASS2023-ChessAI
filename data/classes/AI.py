@@ -1,5 +1,3 @@
-# AI.py
-
 import random
 from classes.Const import ROWS, COLS
 from classes.Game import Game
